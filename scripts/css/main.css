@@ -13,9 +13,12 @@ body {
 
 #aboutMe {
   position: absolute;
+  padding: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgba(139, 165, 232, 0.5);
+  border: 1px solid white;
 }
 
 #aboutMe img {
@@ -24,9 +27,9 @@ body {
   vertical-align: middle;
 }
 
-#aboutMe h2 {
+#aboutMe section {
   display: inline-block;
   padding: 0;
-  text-align: center;
   padding-left: 10px;
+  vertical-align: middle;
 }
