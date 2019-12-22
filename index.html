@@ -3,37 +3,192 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bijit Soni</title>
-  <link rel="stylesheet" href="scripts/css/main.css" </link>
-  <script src="scripts\js\jquery-3.2.1.min.js"></script>
-  <script src="scripts\js\toggleAppearance.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/slides.css" />
+  <link rel="stylesheet" href="css/stickyNav.css" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vibes&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bbe0083c12.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+  <div id="top-blank" style="height: 1px"></div>
+
   <header>
-    <div id="coverPicture"></div>
-    <div id="brief">
-      <img src="data\personal\images\Myself.jpg" /></a>
-      <section>
-        <h1>Bijit Soni</h1>
-        <h3>
-              Architect | Photographer | Programmer | Writer <br />
-            </h3>
-        <p>
-
-        </p>
-      </section>
-    </div>
-
+    <p id="title-name">Bijit Soni</p>
+    <nav id="navbar">
+      <a href="#about" class="deco-links">About</a>
+      <a href="#work" class="deco-links">Work</a>
+      <a href="#contact" class="deco-links">Contact</a>
+      <a href="data\resume\Bijit_Resume.pdf" class="deco-links" target="_blank">Resume</a>
+    </nav>
+    <script type="text/javascript" src="js\stickyNav.js"></script>
   </header>
 
-  <article id="aboutMe">
-  </article>
-  <section id="underConstruction">
-    <h3>This page is still under construction</h3>
+  <section class="slideshow">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"><span>1 / 5</span></div>
+        <img src="data\Slider\Nizampura.png">
+        <div class="text"><span>Smart City Zonal Transport Hub, Nizampura, Vadodara</span></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"><span>2 / 5</span></div>
+        <img src="data\Slider\Prevailing Wind.png">
+        <div class="text"><span>Prevailing Wind Speed during June in India</span></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"><span>3 / 5</span></div>
+        <img src="data\Slider\Psychrometric Chart.jpg">
+        <div class="text"><span>Psychrometric Chart showing Comfortable Hours</span></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"><span>4 / 5</span></div>
+        <img src="data\Slider\Space Studio_191221.jpg">
+        <div class="text"><span>Sunlight Hours Analysis for a Courtyard Space</span></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"><span>5 / 5</span></div>
+        <img src="data\Slider\Tools.JPG">
+        <div class="text"><span>Tools developed for an ease of work</span></div>
+      </div>
+
+      <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+      <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+
+    </div>
+
+    <div class="dots">
+      <span class="dot" onclick='currentSlide(1)'></span>
+      <span class="dot" onclick='currentSlide(2)'></span>
+      <span class="dot" onclick='currentSlide(3)'></span>
+      <span class="dot" onclick='currentSlide(4)'></span>
+      <span class="dot" onclick='currentSlide(5)'></span>
+    </div>
+
+    <script type="text/javascript" src="js\slides.js"></script>
+
   </section>
 
-  <script src="scripts/js/toggleAppearance.js"></script>
+  <article id="about">
+    <div id="me">
+      <img src="data\images\Myself.jpg" alt="Picture of myself">
+      <p>
+        Bijit is an Architect at <a href="http://msain.com/" class="deco-links">Mamta Shah &amp; Associates</a> (2015-Present). He develops Designs for Projects of various scales, plays a role of main Co-ordinator &amp; A Team Leader. He does
+        environmental analysis &amp; simulations for buildings which helps to make decisions related to design.
+        <br>
+        <br>
+        Apart from being an Architect, Bijit has keen interest in Photography &amp; Web Development. He has been an Environmental activist.
+      </p>
+    </div>
+  </article>
+
+  <section id="work" class="wrap-content">
+
+    <a href="data\work\ZTH\ZTH_Nizampura.pdf" target="_blank">
+      <div class="card">
+        <img src="data\work\ZTH\Cover.png" />
+        <section>
+          <h4>Smart City Transport Hub</h4>
+          <p>PPP Project for Intercity Bus Transport Hub at Vadodara</p>
+        </section>
+      </div>
+    </a>
+
+    <a href="data\work\Daylight DIALux\Illuminance Analysis_DIALux.pdf" target="_blank">
+      <div class="card">
+        <img src="data\work\Daylight DIALux\Cover.jpg" />
+        <section>
+          <h4>Illuminance Analysis</h4>
+          <p>An analysis to calculate illuminance level in a hall at Lower Ground Level</p>
+        </section>
+      </div>
+    </a>
+
+    <a href="data\work\Fins Design_GSFC\Fins Design.pdf" target="_blank">
+      <div class="card">
+        <img src="data\work\Fins Design_GSFC\Cover.jpg" />
+        <section>
+          <h4>Fins Design</h4>
+          <p>Design of an External Facade Element according to Daylight Analysis</p>
+        </section>
+      </div>
+    </a>
+
+    <a href="data\work\Daylight Analysis_GSFC\Sunlight Hours Analysis.pdf" target="_blank">
+      <div class="card">
+        <img src="data\work\Daylight Analysis_GSFC\Cover.jpg" />
+        <section>
+          <h4>Sunlight Hours Analysis</h4>
+          <p>Analysis to design a shed to reduce the amount of light entering into a building</p>
+        </section>
+      </div>
+    </a>
+
+    <a href="data\work\Climate Analysis\Climate Analysis_Alembic Space Studio.pdf" target="_blank">
+      <div class="card">
+        <img src="data\work\Climate Analysis\Cover.jpg" />
+        <section>
+          <h4>Climate Analysis</h4>
+          <p>An Early stage analysis for a Thesis on The Exhibition Space at Alembic Space Studio</p>
+        </section>
+      </div>
+    </a>
+
+    <a href="data\work\Internship\Bijit Soni_Internship Portfolio.pdf" target="_blank">
+      <div class="card">
+        <img src="data\work\Internship\Card.png" />
+        <section>
+          <h4>Internship Portfolio</h4>
+          <p>Work during the internship period</p>
+        </section>
+      </div>
+    </a>
+
+  </section>
+
+  <footer id="contact">
+    <div class="icons">
+      <a href="mailto:bijitsony@outlook.com" class="icon deco-links" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="tel:+919722106029" class="icon deco-links" target="_blank">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+      <a href="https://github.com/bijitsony" class="icon deco-links" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://twitter.com/bijitsony" class="icon deco-links" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://linkedin.com/bijitsony" class="icon deco-links" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://instagram.com/bijitsony" class="icon deco-links" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <br>
+    <section id="copyright">
+      <p>
+        This Website is created and maintained by Bijit <br>
+        Copyright © 2019 Bijit Soni All Rights Reserved
+      </p>
+    </section>
+  </footer>
+
+  <div>
+    <a href="#top-blank" id="to-top">&#10094;</a>
+  </div>
 
 </body>
 
