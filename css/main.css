@@ -16,15 +16,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #title-name {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 24px;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 24px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #title-name::first-letter {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .deco-links {
@@ -35,12 +35,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .deco-links:after {
-  display:block;
+  display: block;
   content: '';
   border-bottom: 2px solid orangered;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
-  transform-origin:  0% 50%;
+  transform-origin: 0% 50%;
 }
 
 .deco-links:hover:after {
@@ -99,7 +99,6 @@ nav a {
 #work {
   padding: 0px;
   padding-top: 100px;
-  column-gap: 25px;
   column-count: 3;
 }
 
@@ -130,20 +129,20 @@ nav a {
 
 .card img {
   max-width: 100%;
-    transition: 0.3s;
-    border-radius: 5px;
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
-.card:hover > img {
+.card:hover>img {
   transform: translateY(-3px);
-    transition: 0.3s;
-    border-radius: 5px;
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
-.card:active > img {
-    transform: translateY(0px);
-    transition: 0.3s;
-    border-radius: 5px;
+.card:active>img {
+  transform: translateY(0px);
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
 .card section h4 {
@@ -170,7 +169,6 @@ footer {
   display: inline-block;
 }
 
-
 /*
 .icon:hover:nth-child(1) {
   color: #0072C6;
@@ -196,7 +194,6 @@ footer {
   color: #F44747;
   transition: all .3s ease-in-out;
 }*/
-
 #contact {
   padding: 50px 0px 10px 0px;
 }
@@ -219,7 +216,7 @@ footer {
 @media screen and (max-width: 768px) {
   .wrap-content {
     max-width: 650px;
-    }
+  }
 
   #about {
     max-width: 650px;
@@ -231,13 +228,12 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .wrap-content {
     max-width: 300px;
     padding: 0px 100px;
     margin: auto;
-    }
+  }
 
   #about {
     max-width: 300px;
@@ -267,7 +263,7 @@ footer {
   }
 
   .icons {
-  font-size: 25px;
+    font-size: 25px;
   }
 
   .icon {
