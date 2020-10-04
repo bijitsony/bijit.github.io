@@ -18,7 +18,7 @@
   <script src="js\pythagoreanTheorem.js"></script>
   <script src="js\EWSIICalc.js"></script>
   <!-- Link to MSA Logo -->
-  <link rel="icon" type="image/png" href="..\data\images\Tools.png">
+  <link rel="icon" type="image/png" href="..\..\..\..\data\images\Tools.png">
 </head>
 
 
@@ -53,7 +53,7 @@
 
         <label>m:</label><br /><input type="number" id="inputM" oninput="mTo()" value="0"><br />
       </div>
-        
+
       <div id="areaInput" style="display:none">
         <label>Square inch:</label><br /><input type="number" id="inputSqInch" oninput="SqInchTo()" value="0"><br />
         <label>Square ft:</label><br /><input type="number" id="inputSqFt" oninput="SqFtTo()" value="0"><br />
@@ -63,7 +63,7 @@
         <label>Acre:</label><br /><input type="number" id="inputAcre" oninput="AcreTo()" value="0"><br />
         <label>Hectare:</label><br /><input type="number" id="inputHectare" oninput="HectareTo()" value="0"><br />
       </div>
-        
+
       <div id="volumeInput" style="display:none">
         <label>Cubic inch:</label><br /><input type="number" id="inputCuInch" oninput="CuInchTo()" value="0"><br />
         <label>Cubic ft:</label><br /><input type="number" id="inputCuFt" oninput="CuFtTo()" value="0"><br />
@@ -79,11 +79,11 @@
 
   <!-- Following function calculates slope between two points a certain distance -->
   <section id="slopeCalc">
-      
+
       <img src="..\data\images\info.png" class="info" />
-        
+
       <h3>Calculate slope</h3>
-      
+
       <div class="notes">
         <p>
             This tool is used to calculate slope ratio, <strong>PointA</strong> below is the first level, <strong>PointB</strong> is the second level and <strong>Distance</strong> indicates the distance between two points.</p>
@@ -94,7 +94,7 @@
           <li>Resulting value indicates slope ratio</li>
         </ol>
       </div>
-      
+
       <p>Please maintain same units for all inputs</p>
 
       <!-- User Inputs -->
@@ -111,11 +111,11 @@
 
   <!-- following function calculates the level of the second point based on the level of the first point, slope to be maintained, and the distance of the second point from the first point -->
   <section id="secondPoint">
-      
+
     <img src="..\data\images\info.png" class="info" />
-      
+
     <h3>Calculate level of next point</h3>
-      
+
     <div class="notes">
         <p>
             This tool is used to calculate the level of next point, <strong>PointA</strong> below is the first level, <strong>Distance</strong> indicates the distance between two points and <strong>Slope</strong> indicates the slope ratio</p>
@@ -127,7 +127,7 @@
           <li>D =Subtract PointA from B, will give difference between two points</li>
         </ol>
       </div>
-      
+
     <p>Please maintain same units for all inputs</p>
 
     <!-- Radio buttons for "Up" and "Down" -->
@@ -152,11 +152,11 @@
 
   <!-- following function calculates the coplanar distance between two points based on the location of the first point, second point & provided slope -->
   <section id="distanceCalc">
-      
+
     <img src="..\data\images\info.png" class="info" />
-      
+
     <h3>Calculate distance between two points</h3>
-      
+
     <div class="notes">
         <p>
             This tool is used to calculate the level of next point, <strong>PointA</strong> below is the first level, <strong>Distance</strong> indicates the distance between two points and <strong>Slope</strong> indicates the slope ratio</p>
@@ -168,7 +168,7 @@
           <li>D =Subtract PointA from B, will give difference between two points</li>
         </ol>
       </div>
-      
+
     <p>Please maintain same units for all inputs</p>
 
     <!-- User Inputs -->
@@ -276,7 +276,7 @@
     <!-- Output -->
     <p id="resultSanitaryWare"></p>
   </section>
-    
+
 <!-- following function calculates the Occupancy according to NBC 2016 Part II, p.g.no. 622 -->
   <section id="occupancyData">
     <h3>Occupancy data for Water Requirement</h3>
@@ -306,30 +306,30 @@
         <label>Number of Working Shifts: </label><br /><input type="number" id="occupancy-workingShifts">
         <p><button type="button" onclick="officeType()">Calculate Occupancy</button></p>
       </div>
-        
-      <!-- Residence Occupancy -->       
+
+      <!-- Residence Occupancy -->
       <div id="occupancy-residence" class="inputs" style="display:none;">
         <label>Number of Bedrooms: </label><br /><br />
         <input type="range" min="1" max="4" value="1" id="bedroomNumber-residential" oninput="displayRangeValue();" list="tickmarks"><p id="bednum-value" style="display:inline;">1</p>
-          
+
         <datalist id="tickmarks">
             <option value="1">
             <option value="2">
             <option value="3">
             <option value="4">
         </datalist>
-          
+
         <p><button type="button" onclick="residentialType()">Calculate Occupancy</button></p>
       </div>
-        
-      <!-- School Occupancy -->    
+
+      <!-- School Occupancy -->
       <div id="occupancy-schools" class="inputs" style="display:none;">
         <label>Strength of School (No.): </label><br /><input type="number" id="schoolStrength-school">
         <label>Non-Teaching Staff (No.): </label><br /><input type="number" id="nonTeachingStaff-school">
         <label>Teaching Staff (No.): </label><br /><input type="number" id="teachingStaff-school">
         <p><button type="button" onclick="schoolType()">Calculate Occupancy</button></p>
       </div>
-        
+
       <!-- Hostels Occupancy -->
       <div id="occupancy-hostels" class="inputs" style="display:none;">
         <label>Number of Beds: </label><br /><input type="number" id="bedNumber-hostel">
@@ -337,7 +337,7 @@
         <label>Staff (No.): </label><br /><input type="number" id="staffNumber-hostel">
         <p><button type="button" onclick="hostelType()">Calculate Occupancy</button></p>
       </div>
-        
+
       <!-- Hotels Occupancy -->
       <div id="occupancy-hotels" class="inputs" style="display:none;">
         <label>Number of Beds: </label><br /><input type="number" id="bedNumber-hotel">
@@ -345,21 +345,21 @@
         <label>Restaurant Seats (No.): </label><br /><input type="number" id="restaurantSeats-hotel">
         <p><button type="button" onclick="hotelType()">Calculate Occupancy</button></p>
       </div>
-          
+
       <!-- Hospitals Occupancy -->
       <div id="occupancy-hospitals" class="inputs" style="display:none;">
         <label>Number of Beds: </label><br /><input type="number" id="bedNumber-hospital">
         <label>Patient attendants (No.): </label><br /><input type="number" id="patientAttendants-hospital">
-        <p><button type="button" onclick="hospitalType()">Calculate Occupancy</button></p>       
+        <p><button type="button" onclick="hospitalType()">Calculate Occupancy</button></p>
       </div>
-        
+
       <!-- Mercantile Occupancy -->
       <div id="occupancy-mercantile" class="inputs" style="display:none;">
         <label>Carpet Area of Ground Floor (m²): </label><br /><input type="number" id="carpetAreaGround-mercantile">
         <label>Carpet Area of Upper Floors (m²): </label><br /><input type="number" id="carpetAreaUpper-mercantile">
         <p><button type="button" onclick="mercantileType()">Calculate Occupancy</button></p>
       </div>
-        
+
       <!-- TTS Occupancy -->
       <div id="occupancy-tts" class="inputs" style="display:none;">
         <label>Users (No.): </label><br /><input type="number" id="userNumber-tts">
@@ -374,7 +374,7 @@
 
     <!-- Output -->
     <p id="resultOccupancy"></p>
-  </section>    
+  </section>
 
 <!-- following function converts  the scales -->
   <section id="scaleConversion">
@@ -397,7 +397,7 @@
         <label>Dimension: </label><br /><input type="number" id="currentDimension">
         <label>Current Scale: </label><br /><label>1 :&nbsp;</label><input type="number" id="currentScale">
         <label>Expected Scale: </label><br /><label>1 :&nbsp;</label><input type="number" id="expectedScale">
-        <p><button type="button" onclick="convScale()">Calculate</button></p>   
+        <p><button type="button" onclick="convScale()">Calculate</button></p>
         <!-- Output -->
         <p id="resultScaleValue"></p>
         <p id="selectionErr"></p>
@@ -406,7 +406,7 @@
       <div id="findScale" class="inputs" style="display:none;">
         <label>Actual Dimension: </label><br /><input type="number" id="actualDimension">
         <label>Dimension in Drawing: </label><br /><input type="number" id="modelDimension">
-        
+
         <!-- Output -->
         <p><button type="button" onclick="findScale()">Calculate</button></p>
         <p id="resultScale"></p>
@@ -416,7 +416,7 @@
     </div>
 
   </section>
-    
+
 <!-- following function finds missing side of a triangle -->
   <section id="pythagoreanTheorem">
     <h3>The Pythagorean Theorem</h3>
@@ -429,16 +429,16 @@
 
       <div id="findSide" class="inputs">
         <label>Side A: </label><br /><input type="number" id="sideA">
-        <label>Side B: </label><br /><input type="number" id="sideB">   
+        <label>Side B: </label><br /><input type="number" id="sideB">
         <!-- Output -->
         <p><button type="button" onclick="findSide()">Calculate</button></p>
         <label>Side C: &nbsp; </label><p style="display:inline" id="resultMissingSide"></p>
       </div>
-        
+
     </div>
 
   </section>
-    
+
 <!-- following function finds number of EWSII Units -->
   <section id="pythagoreanTheorem">
     <h3>EWSII Unit Calculator</h3>
@@ -455,11 +455,11 @@
         <p><button type="button" onclick="EWSIICalc()">Calculate</button></p>
         <label> &nbsp; </label><p style="display:inline" id="resultUnits"></p>
       </div>
-        
+
     </div>
 
   </section>
-    
+
   <footer>
     <div>
         <header>
